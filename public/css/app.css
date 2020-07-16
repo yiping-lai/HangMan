@@ -16,6 +16,14 @@ span{
 	flex-wrap:wrap;
 }
 
+.letterBox{
+	width: 50%; 
+	margin: 25px auto;
+	display:flex;
+	justify-content: space-around;
+}
+
+
 .letter{
 	border-bottom: 5px solid black;
 	width: 4vw;
