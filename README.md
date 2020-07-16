@@ -1,7 +1,7 @@
 # Hangman App
 
 ## Introduction
-This is a website that users can play Hangman Game (https://en.wikipedia.org/wiki/Hangman_(game)). 
+This is a website where users can play Hangman Game (https://en.wikipedia.org/wiki/Hangman_(game)).
 
 ## About the Stack
 Frontend: EJS, CSS, Javascript, jQuery
@@ -29,7 +29,5 @@ npm install
 To run the server, execute:
 
 ```bash
-node appjs
+node app.js
 ```
-
-## Sample request for each endpoint. 
