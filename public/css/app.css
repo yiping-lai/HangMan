@@ -1,0 +1,32 @@
+body{
+	background:#DCDCDC;
+}
+
+span{
+	font-size:x-large;
+}
+
+.infoBox{
+	width: 50%; 
+	margin: 25px auto;
+	display:flex;
+	justify-content: space-around;
+}
+
+.letter{
+	border-bottom: 5px solid black;
+	width: 4vw;
+	color:#DCDCDC;
+	text-align:center;
+	font-size:xxx-large;
+}	
+
+#keyBoard{
+	display:flex;
+	width: 50%;
+	margin: 25px auto;
+	flex-wrap:wrap;
+}
+
+
+	
