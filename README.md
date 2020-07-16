@@ -5,7 +5,8 @@ This is a website that users can play Hangman Game (https://en.wikipedia.org/wik
 
 ## About the Stack
 Frontend: EJS, CSS, Javascript, jQuery
-Backend: NodeJS
+
+Backend: NodeJS, Express
 
 ## Getting Started
 
