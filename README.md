@@ -1,7 +1,7 @@
 # Hangman App
 
 ## Introduction
-This is a website where users can play Hangman Game (https://en.wikipedia.org/wiki/Hangman_(game)).
+This is a website where users can play Hangman Game (https://en.wikipedia.org/wiki/Hangman_(game)). Demo website is here (https://immense-oasis-54471.herokuapp.com/).
 
 ## About the Stack
 Frontend: EJS, CSS, Bootstrap3, Javascript, jQuery
