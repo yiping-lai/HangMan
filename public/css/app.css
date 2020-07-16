@@ -13,6 +13,7 @@ span{
 	margin: 25px auto;
 	display:flex;
 	justify-content: space-around;
+	flex-wrap:wrap;
 }
 
 .letter{
@@ -28,6 +29,7 @@ span{
 	width: 50%;
 	margin: 25px auto;
 	flex-wrap:wrap;
+	font-size:xx-large;
 }
 
 
