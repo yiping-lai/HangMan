@@ -10,8 +10,6 @@ Backend: NodeJS, Express
 
 ## Getting Started
 
-## Installing Dependencies
-
 #### Installing Node and NPM
 
 This project depends on Nodejs and Node Package Manager (NPM). Before continuing, you must download and install Node (the download includes NPM) from [https://nodejs.com/en/download](https://nodejs.org/en/download/).
