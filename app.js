@@ -26,9 +26,15 @@ app.get("/",function(req,res){
 });
 
 
-app.listen(3000, function() { 
-	console.log('Server listening on port 3000'); 
-});
+if (process.env.DEVELOPER==='1'){
+	app.listen(3000, function() { 
+		console.log('Server listening on port 3000'); 
+	});
+}else{
+	app.listen(process.env.PORT, process.env.IP, function(){
+  		console.log('Server listening on port',process.env.PORT); 
+	});
+};
 
 
 
