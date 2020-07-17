@@ -2,7 +2,7 @@ var isOver=false,
 	inputKeys=document.querySelectorAll(".inputKey"),
 	mainImg=document.querySelector("#mainImg"),
 	hiddenLetters,
-    images=[
+        images=[
 	"https://www.oligalma.com/downloads/images/hangman/hangman/0.jpg",
 	"https://www.oligalma.com/downloads/images/hangman/hangman/1.jpg",
 	"https://www.oligalma.com/downloads/images/hangman/hangman/2.jpg",
