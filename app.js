@@ -1,7 +1,7 @@
 var express=require("express"),
 	app=express(),
 	bodyParser=require("body-parser"),
-	request = require("request"),
+	axios = require('axios'),
 	dictApi = "https://random-word-api.herokuapp.com/word?number=1";
 
 
@@ -19,10 +19,13 @@ app.use(express.static(__dirname+"/public"));
 //=========================
 app.get("/",function(req,res){
 	// get a random word from dictApi to start the game
-	request.get(dictApi, (error, response, body) => {
-		var word=body.substring(2,body.length-2).split('');
+	axios.get(dictApi)
+	.then(function(response){
+		var word=response.data[0];
 		res.render("game",{word:word});
-	});	
+	}).catch(function(){
+		console.log("ERROR!!!");
+	});
 });
 
 

@@ -2,24 +2,20 @@ var isOver=false,
 	inputKeys=document.querySelectorAll(".inputKey"),
 	mainImg=document.querySelector("#mainImg"),
 	hiddenLetters,
-        images=[
-	"https://www.oligalma.com/downloads/images/hangman/hangman/0.jpg",
-	"https://www.oligalma.com/downloads/images/hangman/hangman/1.jpg",
-	"https://www.oligalma.com/downloads/images/hangman/hangman/2.jpg",
-	"https://www.oligalma.com/downloads/images/hangman/hangman/3.jpg",
-	"https://www.oligalma.com/downloads/images/hangman/hangman/4.jpg",
-	"https://www.oligalma.com/downloads/images/hangman/hangman/5.jpg",
-	"https://www.oligalma.com/downloads/images/hangman/hangman/6.jpg",
-	"https://www.oligalma.com/downloads/images/hangman/hangman/7.jpg",
-	"https://www.oligalma.com/downloads/images/hangman/hangman/8.jpg",
-	"https://www.oligalma.com/downloads/images/hangman/hangman/9.jpg",
-	"https://www.oligalma.com/downloads/images/hangman/hangman/10.jpg"
+    images=[
+		"/img/Hangman-0.png",
+		"/img/Hangman-1.png",
+		"/img/Hangman-2.png",
+		"/img/Hangman-2.png",
+		"/img/Hangman-3.png",
+		"/img/Hangman-4.png",
+		"/img/Hangman-5.png",
+		"/img/Hangman-5.png",			
+		"/img/Hangman-6.png"
 	],
 	totalPoint=images.length-1;
 
-
 init();
-
 
 // initialize all variables and event listeners for input key
 function init(){
@@ -36,7 +32,6 @@ function init(){
 		})
 	}
 }
-
 
 // control logic when user clicks an input key
 function letterSelect(text){
