@@ -38,7 +38,7 @@ function init(){
 }
 
 
-// control logic when user click an input key
+// control logic when user clicks an input key
 function letterSelect(text){
 	if(isOver){
 		return;
@@ -70,7 +70,7 @@ function deductPoint(){
 	}
 }
 
-// display end of game message and disable all event listenr by "isOver=true"
+// display end of game message and disable all event listeners by "isOver=true"
 function endGame(){
 	isOver=true;
 	if (totalPoint==0){
