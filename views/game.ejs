@@ -13,9 +13,7 @@
 		<h1 style="text-align: center">Hangman</h1>
 		
 		<div class='infoBox'>
-			<form action="/" method="GET">
-				<button class="btn btn-default btn-primary">New Game?</button>
-			</form>
+			<button id='newGame' class="btn btn-default btn-primary">New Game?</button>
 			<span>Number of guesses left: <span id="guessLeft"></span></span>
 			<span id="endMsg"></span>
 		</div>
@@ -25,9 +23,6 @@
 		</div>
 
 		<div class='letterBox'>
-			<% for (var i=0;i<word.length;i++){ %>
-				<span class='letter'><%=word[i]%></span>
-			<%}%>		
 		</div>
 
 		<div id='keyBoard'>
