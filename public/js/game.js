@@ -2,7 +2,11 @@ var isOver=false,
 	inputKeys=document.querySelectorAll(".inputKey"),
 	mainImg=document.querySelector("#mainImg"),
 	hiddenLetters,
-    images=[
+	totalPoint,
+	answer;
+
+const dictApi = "https://random-word-api.herokuapp.com/word?number=1",
+	  images=[
 		"/img/Hangman-0.png",
 		"/img/Hangman-1.png",
 		"/img/Hangman-2.png",
@@ -12,10 +16,7 @@ var isOver=false,
 		"/img/Hangman-5.png",
 		"/img/Hangman-5.png",			
 		"/img/Hangman-6.png"
-	],
-	totalPoint,
-	answer,
-	dictApi = "https://random-word-api.herokuapp.com/word?number=1";
+		];
 
 
 $(document).ready(init);
@@ -90,7 +91,7 @@ function letterSelect(text){
 		var elements=$(".letter:contains('"+text+"')");	
 		elements.css('color','black');
 		hiddenLetters-=elements.length;
-		if (hiddenLetters==0){
+		if (hiddenLetters===0){
 			endGame();
 		}
 		
@@ -101,7 +102,7 @@ function letterSelect(text){
 function deductPoint(){
 	totalPoint-=1;
 	mainImg.setAttribute('src', images[images.length-totalPoint-1]);
-	if (totalPoint==0){
+	if (totalPoint===0){
 		endGame();
 	}
 }
@@ -109,7 +110,7 @@ function deductPoint(){
 // display end of game message and disable all event listeners by "isOver=true"
 function endGame(){
 	isOver=true;
-	if (totalPoint==0){
+	if (totalPoint===0){
 		$("#endMsg").text(" You lose!");	
 		// show hidden letters in red
 		var letters=document.querySelectorAll(".letter");
