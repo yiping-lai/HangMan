@@ -3,7 +3,8 @@ var isOver=false,
 	mainImg=document.querySelector("#mainImg"),
 	hiddenLetters,
 	totalPoint,
-	answer;
+	answer,
+	isLoading=false;
 
 const dictApi = "https://random-word-api.herokuapp.com/word?number=1",
 	  images=[
@@ -40,13 +41,17 @@ function init(){
 	
 	// evenet listener for newGame
 	$("#newGame").on('click',function(){
-		reset();
+		if(!isLoading){
+			reset();	
+		}
 	})
 }
 
 
 // get a new word and reset page layout
 function reset(){
+	isLoading=true;
+	$('#newGame').addClass('disabled');
 	$.getJSON(dictApi)
 	.then(function(data){
 		// reset variables	
@@ -68,6 +73,8 @@ function reset(){
 		for (var i=0;i<inputKeys.length;i++){
 			$(inputKeys[i]).removeClass("disabled");
 		}
+		isLoading=false;
+		$('#newGame').removeClass('disabled');
 	})
 	.catch(function(err){
 		console.log(err);
